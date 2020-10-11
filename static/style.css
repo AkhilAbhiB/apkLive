@@ -1,0 +1,93 @@
+
+* {
+  padding: 0px ;
+  margin: 0px ;
+}
+body {
+  background: #BFFAE1 ;
+}
+span{
+  color: red ;
+}
+.hed {
+  background: #19FF66 ;
+  margin: 0px ;
+  padding: 0px ;
+  text-align: center ;
+}
+.hed span {
+  color: red ;
+}
+.menu {
+  text-align: center ;
+}
+.m-body {
+  float: left;
+  width: 20%;
+  margin-left: 15px ;
+  height: 20px ;
+  margin-top: 5px ;
+  background: #19FF66 ;
+  border-radius: 10px ;
+}
+.menu a {
+  text-decoration: none ;
+  color: black ;
+}
+.trending , .newUpdate{
+  width: 100% ;
+  height: 200px ;
+  border: 1px solid #19FF66 ;
+  
+}
+
+.t-body , .n-body {
+  float: left ;
+  padding-left: 20px ;
+  margin-top: 20px ;
+}
+
+.trending img , .newUpdate img{
+  width: 150px ;
+  height: 150px ;
+}
+a {
+  text-decoration: none ;
+  color: black ;
+}
+.newUpdate {
+  margin-top: 5px ;
+}
+.comment {
+  background: #19FF66 ;
+}
+.comment h3 {
+  text-align: center;
+  margin-top: 5px ;
+}
+.comment input , .comment textarea {
+  width: 80%;
+  height: 30px ;
+  margin-left: 20px ;
+  background: none;
+  border: 1px solid black;
+  color: blue ;
+}
+#email {
+  margin-top: 5px ;
+}
+#rew{
+  width: 80% ;
+  height: 50px ;
+  margin-top: 5px ;
+}
+.comment button {
+  width: 40%;
+  height: 25px ;
+  font-size: 15px ;
+  margin-left:30% ;
+  background: none;
+  border: 1px solid black;
+  font-weight: bold;
+
+}

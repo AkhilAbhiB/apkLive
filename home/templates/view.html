@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    
+    
+    
+    <style type="text/css" >
+      * {
+      padding: 0px ;
+      margin: 0px ;
+      }
+      body {
+      background: #BFFAE1 ;
+      }
+      span{
+      color: red ;
+      }
+      .hed {
+      background: #19FF66 ;
+      margin: 0px ;
+      padding: 0px ;
+      text-align: center ;
+      }
+      .hed span {
+      color: red ;
+      }
+      
+      .img img {
+        width: 100px ;
+        height: 100px ;
+        margin-left: 30px ;
+      }
+      
+      .img , .dts {
+        width: 40% ;
+        float: left ;
+      }
+      
+      p{
+        width: max-content ;
+      }
+      .dts{
+        margin-top: 25px ;
+      }
+      .label {
+        margin-top: 30px ;
+      }
+      .hed-page {
+        margin-top: 20px ;
+      }
+      .button {
+        background: green ;
+        width: 90% ;
+        height: 40px ;
+        text-align: center ;
+        margin-left: 5% ;
+        border-radius: 20px ;
+        justify-content: center;
+      }
+      a{
+        text-decoration: none;
+        color: black ;
+      }
+      .button h3 {
+        margin-top: 3px ;
+      }
+    </style>
+    
+    
+    
+    
+    
+    
+</head>
+
+<body>
+    <div class="hed">
+      <h1> <span>A</span>pk <span>L</span>ive</h1>
+    </div>
+  {% for kk in kk %}
+  
+  
+  
+  <div class="hed-page">
+    <div class="img">
+        <img src="{{ kk.appurl }}">
+    </div>
+    <div class="dts">
+      <label><span>N</span>ame: {{ kk.appname }}</label>
+      <br />
+       <label><span>S</span>ize: {{ kk.appsize }}</label>
+    </div>
+    <br /><br /><br />
+    <br />
+    <br />
+    <br />
+    
+    <a href="{{ kk.appdow }}">
+      <div class="button">
+        <h3>Download</h3>
+      </div>
+    </a>
+    
+  </div>
+  
+  {% endfor %}
+  
+  
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+  <link rel="stylesheet" href="{% static 'all.css' %}">
+</head>
+
+<body>
+<div class="hed">
+    <h1> <span>A</span>pk <span>L</span>ive</h1>
+  </div>
+  
+  <div class="menu">
+    
+    
+    
+     <a href="all">
+       <div class="m-body">
+         <h5 >All</h5>
+       </div>
+     </a>
+    
+    
+    <a href="social">
+      <div class="m-body">
+        <h5>Social</h5>
+      </div>
+    </a>
+    
+    
+    
+     <a href="editing">
+      <div class="m-body">
+        <h5 class="select">Editing</h5>
+      </div>
+    </a>
+    
+    
+     <a href="game">
+      <div class="m-body">
+        <h5>Games</h5>
+      </div>
+    </a>
+
+    
+    
+    
+    
+  </div>
+  
+  <br />
+  <br />
+
+
+
+
+<div class="app">
+  
+  
+  {% for edt in edt %}
+  
+    
+  <a href="view?id={{ edt.id }}">
+    <div class="app-body">
+       <img src="{{ edt.appurl }}">
+       <h5>{{ edt.appname }}</h5>
+    </div>
+    
+  </a>
+  
+  {% endfor %}
+  
+</div>
+
+
+
+</body>
+
+</html>

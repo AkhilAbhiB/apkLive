@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#19FF66" />
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+  
+  
+  
+  
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+  <div class="hed">
+    <h1> <span>A</span>pk <span>L</span>ive</h1>
+  </div>
+  
+  <div class="menu">
+    
+    
+    
+     <a href="all">
+       <div class="m-body">
+         <h5>All</h5>
+       </div>
+     </a>
+    
+    
+    <a href="social">
+      <div class="m-body">
+        <h5>Social</h5>
+      </div>
+    </a>
+    
+    
+    
+     <a href="editing">
+      <div class="m-body">
+        <h5>Editing</h5>
+      </div>
+    </a>
+    
+    
+     <a href="game">
+      <div class="m-body">
+        <h5>Games</h5>
+      </div>
+    </a>
+
+    
+    
+    
+    
+  </div>
+  
+  <br />
+  <br />
+  
+  <a href="">
+  
+  <div class="trending">
+    
+    <div class="t-body">
+      <img src="https://via.placeholder.com/150">
+    </div>
+    
+     <div class="t-body">
+      <img src="https://via.placeholder.com/150">
+    </div>
+    
+    <div class="t-name">
+          
+        <h4><span>T</span>rending</h4>
+    
+    </div>
+
+
+  </div>
+  </a>
+  
+  
+  
+    <a href="">
+  
+  <div class="newUpdate">
+    
+    <div class="n-body">
+      <img src="https://via.placeholder.com/150">
+    </div>
+    
+     <div class="n-body">
+      <img src="https://via.placeholder.com/150">
+    </div>
+    
+    <div class="n-name">
+          
+        <h4><span>N</span>ew <span>U</span>pdate</h4>
+    
+    </div>
+
+
+  </div>
+  </a>
+  
+  
+  
+  <div class="comment">
+    <h3>Your Reviews</h3>
+    <form action="cmt" method="POST" accept-charset="utf-8">
+        
+        {% csrf_token %}
+      
+      <input type="text" name="name" id="name" value="" placeholder="Name" />
+      
+      <br />
+      <input type="email" name="email" id="email" value="" placeholder="Email"/>
+      
+      <br />
+
+      <textarea name="rew" id=rew placeholder="Reviews "></textarea>
+      <br />
+      
+      <button type="submit">Submit</button>
+      
+
+
+      
+    </form>
+    
+  </div>
+  
+  
+  
+  
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
